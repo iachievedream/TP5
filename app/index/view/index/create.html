@@ -1,0 +1,21 @@
+{include file="commoneasy/head" /}
+<section class="content">
+	<h2>申請</h2>
+	<form action="{:url('add')}" method="post">
+		<label for="name">員工姓名:</label><input type="text" name="name" id="name" /><br>
+		<label for="date">請假日期:</label><input type="text" name="date" id="date" /><br>
+		<label for="reason">請假事由:</label><input type="text" name="reason" id="reason" /><br>
+		<label for="approved">上司核准:</label><input type="text" name="approved" id="approved" /><br>
+		<button type="submit">submit</button>
+	</form>
+<!-- 
+		<FORM method="post"	class="form" action="{:url('add')}">
+			員工姓名:<INPUT type="text" class="text" name="name "><br/>
+			請假日期:<INPUT type="text" class="text" name="date "><br/>
+			請假事由:<INPUT type="text" class="text" name="reason "><br/>
+			上司核准:<INPUT type="text" class="text" name="approved  "><br/>
+			<button type="submit">submit</button>
+		</FORM>-->
+	</section>
+</div>
+{include file="commoneasy/foot" /}

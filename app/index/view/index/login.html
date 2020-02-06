@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>login</title>
+</head>
+<body>
+<!-- <DIV style="text-align:center;"> -->
+	<div align="center">
+		<h2>登入</h2>
+		  <button type="submit">
+		    <a href="{:url('addlogin')}">增加帳號</a>
+		  </button>
+		<form action="{:url('log')}" method="post">
+      username：<input type="text" name="username"><br />
+      password：<input type="password" name="password"><br />
+      <input type="submit" name="sub" value="submit">
+    </form>
+	</div>
+</body>
+</html>
+

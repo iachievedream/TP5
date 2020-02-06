@@ -1,0 +1,19 @@
+{include file="commoneasy/head" /}
+    <section class="content">
+      更新
+		<div class="col-md-12">
+			<form action="{:url('Userupdate')}" method="post">
+				<label>ID:</label>
+				<input type="text" name="id" value="{$User->getData('id')}" readonly="readonly"/>
+				<label>name:</label>
+				<input type="text" name="name" value="{$User->getData('name')}" />
+				<label>username:</label>
+				<input type="text" name="username" value="{$User->getData('username')}" />
+				<label>password:</label>
+				<input type="text" name="password" value="{$User->getData('password')}" />
+				<button type="submit">保存</button>
+			</form>
+		</div>
+    </section>
+  </div>
+  {include file="commoneasy/foot" /}

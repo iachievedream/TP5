@@ -1,0 +1,21 @@
+{include file="commoneasy/head" /}
+    <section class="content">
+      更新
+		<div class="col-md-12">
+			<form action="{:url('update')}" method="post">
+				<label>ID:</label>
+				<input type="text" name="id" value="{$Leave->getData('id')}" readonly="readonly"/>
+				<label>name:</label>
+				<input type="text" name="name" value="{$Leave->getData('name')}" />
+				<label>date:</label>
+				<input type="text" name="date" value="{$Leave->getData('date')}" />
+				<label>reason:</label>
+				<input type="text" name="reason" value="{$Leave->getData('reason')}" />
+				<label>approved:</label>
+				<input type="text" name="approved" value="{$Leave->getData('approved')}" />
+				<button type="submit">保存</button>
+			</form>
+		</div>
+    </section>
+  </div>
+  {include file="commoneasy/foot" /}

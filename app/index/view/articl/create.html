@@ -1,0 +1,51 @@
+{include file="commoneasy/head" /}
+<!-- Main content -->
+<section class="content">
+	<h2>申請</h2>
+	<form action="{:url('add')}" method="post">
+		<table class="table no-margin">
+			<thead>
+				<tr>
+					<th>article</th>
+					<th><input type="text" name="article" id="article" /></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Author</th>
+					<th><input type="text" name="Author" id="Author" /></th>
+				</tr>
+				<tr>
+					<th>time</th>
+					<th><input type="text" name="time" id="time" /></th>
+				</tr>
+				<tr>
+					<th>Remarks</th>
+					<th><input type="text" name="Remarks" id="Remarks" /></th>
+				</tr>
+
+			</tbody>
+		</table>
+		<button type="submit">submit</button>
+	</form>
+
+<!-- 
+		<FORM method="post"	class="form" action="{:url('add')}">
+			員工姓名:<INPUT type="text" class="text" name="name "><br/>
+			請假日期:<INPUT type="text" class="text" name="date "><br/>
+			請假事由:<INPUT type="text" class="text" name="reason "><br/>
+			上司核准:<INPUT type="text" class="text" name="approved  "><br/>
+			<button type="submit">submit</button>
+		</FORM>
+
+		<form action="{:url('add')}" method="post">
+		<label for="article">article:</label><input type="text" name="article" id="article" /><br>
+		<label for="Author">Author:</label><input type="text" name="Author" id="Author" /><br>
+		<label for="time">time:</label><input type="text" name="time" id="time" /><br>
+		<label for="Remarks">Remarks:</label><input type="text" name="Remarks" id="Remarks" /><br>
+		<button type="submit">submit</button>
+		</form>
+	-->
+</section>
+</div>
+{include file="commoneasy/foot" /}

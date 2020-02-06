@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>管理系統</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="__STATIC__/new/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="__STATIC__/new/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="__STATIC__/new/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="__STATIC__/new/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="__STATIC__/new/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="__STATIC__/new/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="__STATIC__/new/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="__STATIC__/new/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="__STATIC__/new/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="__STATIC__/new/bootstrap3-wysihtml5.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="{:url('Index/Index')}" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">4
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>管理系統</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:url('Index/Process')}">
+              <i class="fa fa-circle-o"></i> 流程</a></li>
+            <li><a href="{:url('Index/index')}">
+              <i class="fa fa-circle-o"></i> Leave</a></li>
+            <li><a href="{:url('Articl/index')}">
+              <i class="fa fa-circle-o"></i> Article</a></li>
+            <li><a href="{:url('Articl/username')}">
+              <i class="fa fa-circle-o"></i> user password</a></li>
+            <li><a href="{:url('index/signout')}">
+              <i class="fa fa-circle-o"></i> Sign out</a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Easyuse</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{:url('Easyuse/index')}">
+              <i class="fa fa-circle-o"></i> index</a></li>
+            <li><a href="{:url('Easyuse/add')}">
+              <i class="fa fa-circle-o"></i>add</a></li>
+            <li><a href="{:url('Easyuse/addList')}">
+              <i class="fa fa-circle-o"></i> addList</a></li>
+          </ul>
+        </li>
+        
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>User</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{:url('User/index')}">
+              <i class="fa fa-circle-o"></i> index</a></li>
+            <li><a href="{:url('User/add')}">
+              <i class="fa fa-circle-o"></i>add</a></li>
+            <li><a href="{:url('User/addList')}">
+              <i class="fa fa-circle-o"></i> addList</a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>API</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{:url('Cookiesession/index')}">
+              <i class="fa fa-circle-o"></i>Cookiesession</a></li>
+            <li class="active"><a href="{:url('Client/index')}">
+              <i class="fa fa-circle-o"></i> Client</a></li>
+            <li><a href="{:url('Server/respond')}">
+              <i class="fa fa-circle-o"></i>Server</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Control panel</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>

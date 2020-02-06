@@ -1,0 +1,17 @@
+{include file="User/header" /}
+	<h2>用户列表（{$list->total()}）</h2>
+	<a href="__URL__/create">新增</a>
+    <a href="http://c.fuwork.xyz/index/Cookiesession" target="qiniu">Cookie_Session實務操作</a>
+
+	<br/>
+	{volist name="list" id="user" }
+	<div class="info">
+		I D ：{$user.id}<br/>
+		昵称：{$user.nickname}<br/>
+		邮箱：{$user.email}<br/>
+		生日：{$user.birthday}<br/>
+		<a href="__URL__/date/id/{$user.id}">修改</a>---
+		<a href="__URL__/delete/id/{$user.id}">删除</a><br/>
+	</div>
+	{/volist}{$list->render()}
+{include file="User/footer" /}

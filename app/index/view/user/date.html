@@ -1,0 +1,13 @@
+{include file="User/header" /}
+	{volist name="data" id="vo"}
+		<h2>更新用户</h2>
+		<FORM method="post" class="form" action="{:url('update')}">
+		id：<INPUT id="id"type="text" class="text" name="id" value="{$vo.id}" readonly><br/>
+		昵 称：<INPUT type="text" class="text" name="nickname" value="{$vo.nickname}"><br/>
+		邮 箱：<INPUT type="text" class="text" name="email" value="{$vo.email}"><br/>
+		生 日：<INPUT type="text" class="text" name="birthday" value="{$vo.birthday}"><br/>
+		<input type="hidden" name="__token__" value="{$Request.token}" />
+		<INPUT type="submit" class="btn" value=" 提交 ">
+		</FORM>
+	{/volist}
+{include file="User/footer" /}

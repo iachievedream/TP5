@@ -1,0 +1,10 @@
+{include file="User/header" /}
+	<h2>创建用户</h2>
+	<FORM method="post" class="form" action="{:url('add')}">
+	昵 称：<INPUT type="text" class="text" name="nickname" value="{$Request.Cookie.user_name}--Cookie紀錄"><br/>
+	邮 箱：<INPUT type="text" class="text" name="email" value="{$Request.Session.user_email}--Session紀錄"><br/>
+	生 日：<INPUT type="text" class="text" name="birthday"><br/>
+	<input type="hidden" name="__token__" value="{$Request.token}" />
+	<INPUT type="submit" class="btn" value=" 提交 ">
+	</FORM>
+{include file="User/footer" /}
